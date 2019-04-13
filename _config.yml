@@ -3,18 +3,18 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: Toshi blog
+email: toshi15shkim@gmail.com
+description: A simple and awesome blog by Toshi.
 url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+keywords: ["blog", "toshi", "toshi15shkim"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Seoul
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,11 +33,11 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: Toshi
   avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  job: "Toshi blog"
+  bio: "A simple and awesome blog by Toshi."
+  email: toshi15shkim@gmail.com
   disqus-shortname:
   twitter: #username
   facebook: #username
