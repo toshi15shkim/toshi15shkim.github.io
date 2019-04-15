@@ -19,7 +19,7 @@ comments: true
 TYPE="ntfs" 기기가 /dev/sda1로 인식되는걸 확인할 수 있다.
 > sudo blkid 
 
-![Smithsonian Image](../img/190415/1-sudo blkid.jpg)
+![Smithsonian Image](/img/190415/1-sudo blkid.jpg)
 
 ntfs-3g를 설치한다. 
 sudo apt-get install ntfs-3g 입력
