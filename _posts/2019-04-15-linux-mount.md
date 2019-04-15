@@ -25,7 +25,7 @@ ntfs-3g를 설치한다.
 sudo apt-get install ntfs-3g 입력
 > sudo apt-get install ntfs-3g 
 
-![Smithsonian Image](../img/190415/2-ntfs3 install err.jpg)
+![Smithsonian Image](/img/190415/2-ntfs3 install err.jpg)
 
 근데..에러가 발생한다.
 에러 맨 아래에 보니 apt-get을 업데이트를 하라고 나온다.
