@@ -59,7 +59,7 @@ DATA로 마운트를 하기 위한 명령을 입력했다.
 
 ![Smithsonian Image](/img/190415/7-nano etc fstab update.jpg)
 아래 내용을 추가한다. 간격은 tab이 아닌 space로 띄워줘야 한다.  
-/dev/sda1     /DATA     ntfs      default     0      0
+/dev/sda1     /DATA     ntfs      defaults     0      0
 
 이제 재부팅을 하고 마운트가 잘 되었나 확인해 보면!
 ![Smithsonian Image](/img/190415/8-success.jpg)
