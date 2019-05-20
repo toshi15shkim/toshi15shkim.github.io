@@ -18,50 +18,50 @@ comments: true
 그리고 콘솔에 sudo blkid 입력하면 TYPE="ntfs" 기기가 /dev/sda1로 인식되는걸 확인할 수 있다.  
 > sudo blkid 
 
-![Smithsonian Image](/img/190415/1-sudo blkid.jpg)
+![Smithsonian Image](/img/190415/1-sudo_blkid.jpg)
 
 ntfs-3g를 설치한다. 
 sudo apt-get install ntfs-3g 입력
 > sudo apt-get install ntfs-3g 
 
-![Smithsonian Image](/img/190415/2-ntfs3 install err.jpg)
+![Smithsonian Image](/img/190415/2-ntfs3_install_err.jpg)
 
 근데..에러가 발생한다.
 에러 맨 아래에 보니 apt-get을 업데이트를 하라고 나온다.  
 업데이트를 해보자.
 > sudo apt-get update 
 
-![Smithsonian Image](/img/190415/3-apt-get update.jpg)
+![Smithsonian Image](/img/190415/3-apt-get_update.jpg)
 
 업데이트 완료.  
 다시 ntfs-3g를 설치해보자.
 > sudo apt-get install ntfs-3g
 
-![Smithsonian Image](/img/190415/4-re ntfs3 install.jpg)
+![Smithsonian Image](/img/190415/4-re_ntfs3_install.jpg)
 성공적으로 설치가 되었다. 
 
 
 마운트가 잘 되었는지 확인해보자.
 > df -h
   
-![Smithsonian Image](/img/190415/5-auto mount.jpg)
+![Smithsonian Image](/img/190415/5-auto_mount.jpg)  
 466G 마운트가 되긴 했는데...위치가 좀 이상하다.  
 내가 원하는 위치를 잡아줘야 한다.  
 나의 경우 / 위치에 DATA폴더를 mkdir로 생성했다.  
 DATA로 마운트를 하기 위한 명령을 입력했다.
 > sudo mount /dev/sda1 DATA
 
-![Smithsonian Image](/img/190415/6-auto mount.jpg)
+![Smithsonian Image](/img/190415/6-auto_mount.jpg)  
 이미 마운트가 되어있다고 나왔다.  
 /etc/fstab을 수정해보자.
 
 > sudo nano /etc/fstab
 
-![Smithsonian Image](/img/190415/7-nano etc fstab update.jpg)
+![Smithsonian Image](/img/190415/7-nano_etc_fstab_update.jpg)
 아래 내용을 추가한다. 간격은 tab이 아닌 space로 띄워줘야 한다.  
 /dev/sda1     /DATA     ntfs      defaults     0      0
 
-이제 재부팅을 하고 마운트가 잘 되었나 확인해 보면!
+이제 재부팅을 하고 마운트가 잘 되었나 확인해 보면!  
 ![Smithsonian Image](/img/190415/8-success.jpg)
 
 마운트 성공.
