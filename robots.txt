@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://toshi15shkim.github.io/sitemap.xml
