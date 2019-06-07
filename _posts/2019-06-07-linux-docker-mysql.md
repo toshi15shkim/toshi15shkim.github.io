@@ -112,7 +112,7 @@ Mysql 접속해서 Master에 대한 정보 입력
 mysql> change master to
     -> master_host='마스터아이피',
     -> master_user='아이디',
-    -> master_password='비밀번호!',
+    -> master_password='비밀번호',
     -> master_log_file='mysql-bin.000001',
     -> master_log_pos=6274;
 ```
