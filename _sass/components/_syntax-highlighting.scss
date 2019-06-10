@@ -66,7 +66,7 @@ pre code {
     }
   }
   .hll { background-color: #ffffcc }
-  .c { color: #056605; font-style: normal } /* Comment */
+  .c { color: #049c04; font-style: bold } /* Comment */
   .err {  } /* Error */
   .k { color: #AA22FF; font-weight: bold } /* Keyword */
   .o { color: #666666 } /* Operator */
@@ -102,7 +102,7 @@ pre code {
   .nf { color: #00A000 } /* Name.Function */
   .nl { color: #A0A000 } /* Name.Label */
   .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-  .nt { color: #008000; font-weight: bold } /* Name.Tag */
+  //.nt { color: #008000; font-weight: bold } /* Name.Tag */
   .nv { color: #B8860B } /* Name.Variable */
   .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
   .w { color: #bbbbbb } /* Text.Whitespace */
