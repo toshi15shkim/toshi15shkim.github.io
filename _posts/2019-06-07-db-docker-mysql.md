@@ -2,7 +2,7 @@
 layout: post
 title: Docker로 Mysql DB 이중화(Replication) 방법
 excerpt: "Mysql"
-categories: [Linux]
+categories: [DB]
 comments: true
 ---
 
