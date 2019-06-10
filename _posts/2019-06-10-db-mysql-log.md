@@ -10,12 +10,15 @@ comments: true
 Web/WAS 로그도 중요하지만, DB로그도 운영에 있어서 소홀히 할 수 없다.
 그래서 Mysql 쿼리 로그를 설정했던 경험을 기록해보기로 했다.
 
+<br/>
+
 #### general_log
 Mysql에서 실행되는 모든 쿼리를 저장  
 default는 OFF로 설정되어 있음  
 ON으로 설정해야 로그를 기록함  
 
 ```bash
+#general_log 확인
 mysql> show variables like 'general%';
 +------------------+------------------------------+
 | Variable_name    | Value                        |
@@ -27,8 +30,6 @@ mysql> show variables like 'general%';
 ```
 
 <br/>
-
-
 
 ```bash
 mysql> set global general_log_file = '/var/log/mysql/general_mysql.log';

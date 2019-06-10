@@ -7,7 +7,8 @@ pre, code {
   font-family: $font-family-monospace;
   color: #525252;
   font-size: 0.9em;
-  background-color: #f8f8f8;
+  //background-color: #f8f8f8;
+  background-color: #525252;
   font-size: ($font-size-base - 3);
 }
 code {
@@ -33,7 +34,8 @@ pre code {
   white-space: pre;
   overflow: auto;
   word-wrap: normal;
-  color: #525252;
+  //color: #525252;
+  color: #fefbfb;
   span {
     word-break: break-all;
   }
