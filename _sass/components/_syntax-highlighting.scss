@@ -5,10 +5,11 @@
 
 pre, code {
   font-family: $font-family-monospace;
-  color: #525252;
+  color: #fefbfb;
+  //color: #525252;
   font-size: 0.9em;
   //background-color: #f8f8f8;
-  background-color: #525252;
+  background-color: #0e0d0d;
   font-size: ($font-size-base - 3);
 }
 code {
@@ -46,7 +47,8 @@ pre code {
     position: relative;
   }
   pre code {
-    color: #525252;
+    //color: #525252;
+    color: #fefbfb;
     &::before {
       content: attr(data-lang);
       position: absolute;
