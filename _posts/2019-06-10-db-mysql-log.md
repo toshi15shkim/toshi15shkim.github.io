@@ -86,4 +86,23 @@ Query OK, 0 rows affected (0.00 sec)
 <br/>
 
 #### logrotate
-/etc/logrotate.d 를 통해
+logrotate를 사용하지 않으면 로그파일이 무한정 커진다.  
+/etc/logrotate.d 폴더의 mysql 파일에 세팅값을 설정한다. (없으면 생성)  
+```bash
+/var/log/mysql/general-mysql.log {
+        create 640 mysql mysql
+        notifempty
+        daily
+        rotate 50
+        missingok
+        dateext
+        postrotate
+               # just if mysqld is really running
+               if test -x /usr/bin/mysqladmin && \
+                  /usr/bin/mysqladmin ping &>/dev/null
+               then
+                  /usr/bin/mysqladmin flush-logs
+               fi
+        endscript
+}
+```

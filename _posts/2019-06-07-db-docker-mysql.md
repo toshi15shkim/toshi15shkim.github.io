@@ -126,7 +126,7 @@ $ docker restart mysql-slave
 #slave 들어가서 slave 상태 확인
 $ mysql> show slave status\G;
 ```
-![Image](/img/190607/6_complete.jpg)
+![Image](/img/190607/6_complete.jpg){: width="300"}
 
 >Last_Errno : 0  
 >Last_IO_Errno : 0 이 찍혀야 함
