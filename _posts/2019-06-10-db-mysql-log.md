@@ -37,7 +37,7 @@ mysql> set global general_log = ON;
 Query OK, 0 rows affected (0.00 sec)
 
 #로그 위치변경
-mysql> set global general_log_file = '/var/log/mysql/general_mysql.log';
+mysql> set global general_log_file = '/var/log/mysql/general-mysql.log';
 Query OK, 0 rows affected (0.00 sec)
 ```
 데이터가 굉장히 빨리 쌓이므로 용량관리에 주의해야 함
@@ -84,6 +84,17 @@ Query OK, 0 rows affected (0.00 sec)
 ```
 
 <br/>
+
+### ps. 위와 같은 쿼리로 설정한 상태에서 Mysql을 재시작하면 초기화 되므로, my.cnf에 설정하면 영구 보존된다.
+```bash
+#my.cnf
+[mysqld]
+log-error=/var/log/mysql/err-mysql.log
+general_log=ON
+general_log_file=/var/log/mysql/general-mysql.log
+slow_query_log=ON
+slow_query_log_file=/var/log/mysql/slow-mysql.log
+```
 
 #### logrotate
 logrotate를 사용하지 않으면 로그파일이 무한정 커진다.  
