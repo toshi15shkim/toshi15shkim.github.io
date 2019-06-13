@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: Toshi blog
+title: Toshi의 개발 블로그
 email: toshi15shkim@gmail.com
 description: A simple and awesome blog by Toshi.
 url: #
@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: Toshi
   avatar: leonids-logo.png
-  job: "Toshi blog"
+  job: "Java Developer"
   bio: "A simple and awesome blog by Toshi."
   email: toshi15shkim@gmail.com
   disqus-shortname:
@@ -48,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: toshi15shkim
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
