@@ -35,7 +35,7 @@ kramdown:
 owner:
   name: Toshi
   avatar: leonids-logo.png
-  job: "Java Developer"
+  job: "Toshi의 개발 블로그"
   bio: "A simple and awesome blog by Toshi."
   email: toshi15shkim@gmail.com
   disqus-shortname:
