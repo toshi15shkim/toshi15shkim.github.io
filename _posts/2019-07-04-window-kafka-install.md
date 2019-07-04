@@ -21,7 +21,7 @@ kafka는 broker를 기준으로 클러스터링 되어 topic을 관리하는데 
 5. 반드시 zookeeper를 먼저 실행 후 kafka를 실행해야 한다.  
 zookeeper-server-start.bat 뒤에 zookeeper.properties를 붙여준다.  
 
-```ruby
+```bash
 ##예시
 %KAFKA_HOME%\bin\windows\zookeeper-server-start.bat %KAFKA_HOME%\config\zookeeper.properties
 
@@ -30,7 +30,8 @@ D:\develop\kafka_2.11-2.3.0\bin\windows\zookeeper-server-start.bat D:\develop\ka
 ```
 
 6. kafka를 실행한다.
-```ruby
+
+```bash
 %KAFKA_HOME%\bin\windows\kafka-server-start.bat %KAFKA_HOME%\config\server.properties
 
 D:\develop\kafka_2.11-2.3.0\bin\windows\kafka-server-start.bat D:\develop\kafka_2.11-2.3.0\config\server.properties
