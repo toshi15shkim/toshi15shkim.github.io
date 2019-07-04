@@ -16,7 +16,9 @@ comments: true
 <br/>
 
 pi로 접속해서 아래 명령어를 입력하여 docker를 다운로드 받는다.
->sudo curl -fsSL https://get.docker.com/ | sudo sh
+```bash
+sudo curl -fsSL https://get.docker.com/ | sudo sh
+```
 
 ```bash
 pi@raspberrypi:/ $ sudo curl -fsSL https://get.docker.com/ | sudo sh
@@ -56,7 +58,10 @@ Server: Docker Engine - Community
 <br/>
 
 도커 프로세스를 확인해보려면 docker ps 명령어를 입력한다.
-> docker ps
+```bash
+docker ps
+```
+
 ```bash
 pi@raspberrypi:/ $ docker ps
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
@@ -67,6 +72,8 @@ Got permission denied while trying to connect to the Docker daemon socket at uni
 
 docker 권한을 pi로 줍니다. (사용자 id)  
 
-> pi@raspberrypi:/ $ sudo usermod -aG docker pi
+```bash
+pi@raspberrypi:/ $ sudo usermod -aG docker pi
+```
 
 ## 반드시 재접속 해야 권한이 정상 적용됩니다~^0^
