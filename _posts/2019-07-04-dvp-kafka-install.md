@@ -2,7 +2,7 @@
 layout: post
 title: Window에 kafka 설치하기
 excerpt: ""
-categories: [Window]
+categories: [Development]
 comments: true
 ---
 
