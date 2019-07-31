@@ -21,13 +21,13 @@ $ yum install -y docker
 $ docker search mysql
 ```
 
- ![Image](/img/190607/1_docker_search_mysql.jpg){: width="1000"}
+ ![Image](/img/2019/190607/1_docker_search_mysql.jpg){: width="1000"}
 
 수 많은 mysql 이미지 중 docker.io/mysql을 받는다.
 ```bash
 $ docker pull docker.io/mysql
 ```
-![Image](/img/190607/2_docker_pull_mysql.jpg){: width="700"}
+![Image](/img/2019/190607/2_docker_pull_mysql.jpg){: width="700"}
 
 <br/>
 
@@ -93,7 +93,7 @@ Mysql 재시작
 
 Master mysql에서 show master status; 입력
 
-![Image](/img/190607/5_show_master_status.jpg){: width="700"}
+![Image](/img/2019/190607/5_show_master_status.jpg){: width="700"}
 
 위의 내용을 slave에 넣어야 하므로 slave 접속  
 
@@ -126,7 +126,7 @@ $ docker restart mysql-slave
 #slave 들어가서 slave 상태 확인
 $ mysql> show slave status\G;
 ```
-![Image](/img/190607/6_complete.jpg){: width="700"}
+![Image](/img/2019/190607/6_complete.jpg){: width="700"}
 
 >Last_Errno : 0  
 >Last_IO_Errno : 0 이 찍혀야 함
