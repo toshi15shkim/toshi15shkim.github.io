@@ -130,4 +130,4 @@ public class IndexController {
 
 localhost:8080으로 접속하면 Hello World!!! 출력됨
 
-![Smithsonian Image](/img/2019/190725/7.helloworld.jpg){: width="255"}
+![Smithsonian Image](/img/2019/190725/7.helloworld.jpg){: width="246"}
