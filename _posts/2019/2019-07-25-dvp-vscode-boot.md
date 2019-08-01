@@ -61,6 +61,9 @@ spring:
 
 <br/>
 
+build.gradle 파일을 확인하면 아래와 같이 되어 있는데,  
+dependencies에 implementation 'org.apache.tomcat.embed:tomcat-embed-jasper' 줄을 추가한다.
+
 ```xml
 plugins {
 	id 'org.springframework.boot' version '2.1.7.BUILD-SNAPSHOT'
@@ -90,6 +93,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	<!-- tomcat-embed-jasper 추가 -->
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'	
 }
 ```
+
