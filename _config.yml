@@ -7,7 +7,7 @@ title: Toshi의 개발 블로그
 email: toshi15shkim@gmail.com
 description: A simple and awesome blog by Toshi.
 url: #
-keywords: ["blog", "toshi", "toshi15shkim"]
+keywords: ["blog", "toshi", "toshi15shkim", "db", "java", "linux"]
 
 #
 ###################################
@@ -33,7 +33,7 @@ kramdown:
 ####################################
 #
 owner:
-  name: Toshi
+  name: 토시
   avatar: leonids-logo.png
   job: "Toshi의 개발 블로그"
   bio: "A simple and awesome blog by Toshi."
