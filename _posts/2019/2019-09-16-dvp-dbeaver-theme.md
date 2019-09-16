@@ -19,8 +19,8 @@ DBeaver는 Light Theme가 default라서 상당히 눈이 아프다.
 아래 이미지처럼 간단한 설정만으로 Dark Theme 변경이 가능하다.
 
 
-![Smithsonian Image](/img/2019/190916/1.light.jpg){: width="1900"}
+![Smithsonian Image](/img/2019/190916/1.light.jpg){: width="990"}
 
 <br/>
 
-![Smithsonian Image](/img/2019/190916/2.dark.jpg){: width="1900"}
+![Smithsonian Image](/img/2019/190916/2.dark.jpg){: width="990"}
