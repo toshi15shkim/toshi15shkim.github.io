@@ -58,7 +58,7 @@ create database <DB명>> owner <아이디>;
 
 <br/>
 
-### 테이블 목록 조회
+### 모든 데이터베이스 목록 조회
 ```bash
 postgres=$ \l
 
@@ -73,6 +73,29 @@ postgres=$ \l
  template1 | postgres | SQL_ASCII | C       | C     | =c/postgres          +
            |          |           |         |       | postgres=CTc/postgres
 (4 rows)
+```
+
+<br/>
+
+### 모든 테이블 목록 조회
+```bash
+postgres=$ select * from pg_tables where tableowner = 'paas'
+
+
+ schemaname |    tablename    | tableowner | tablespace | hasindexes | hasrules | hastriggers | rowsecur
+ity
+------------+-----------------+------------+------------+------------+----------+-------------+---------
+----
+ paas       | auth            | paas       |            | t          | f        | f           | f
+ paas       | chn_vod_mapping | paas       |            | f          | f        | f           | f
+ paas       | system_setting  | paas       |            | t          | f        | f           | f
+ paas       | transfer_time   | paas       |            | t          | f        | f           | f
+ paas       | vod             | paas       |            | t          | f        | f           | f
+ paas       | vod_view_log    | paas       |            | t          | f        | f           | f
+ paas       | member          | paas       |            | t          | f        | t           | f
+ paas       | channel         | paas       |            | t          | f        | t           | f
+(8 rows)
+
 ```
 
 <br/>
