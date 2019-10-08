@@ -10,8 +10,8 @@ comments: true
 
 <br/>
 
-### RandomStringUtils 을 사용하기 위해서는 commons-lang3이 필요하다.   
-### build.gradle 에 아래 항목을 추가한다.
+#### RandomStringUtils 을 사용하기 위해서는 commons-lang3이 필요하다.   
+#### build.gradle 에 아래 항목을 추가한다.
 
 ```bash
 compile 'org.apache.commons:commons-lang3:3.0'
@@ -19,7 +19,7 @@ compile 'org.apache.commons:commons-lang3:3.0'
 
 <br/>
 
-### yyyyMMddHHmmssSSS_랜덤문자6개 생성
+#### yyyyMMddHHmmssSSS_랜덤문자6개 생성
 
 ```java
 import java.text.SimpleDateFormat;
@@ -45,7 +45,7 @@ public class CommonUtils {
 
 <br/>
 
-### 메소드를 실행하면 고유값을 리턴한다.
+#### 메소드를 실행하면 고유값을 리턴한다.
 
 ```bash
 
