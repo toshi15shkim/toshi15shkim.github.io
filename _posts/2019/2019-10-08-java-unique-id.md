@@ -8,6 +8,8 @@ comments: true
 
 ## Java 현재 시간 + 랜덤 문자로 고유한 Unique 값 만들기
 
+<br/>
+
 ### RandomStringUtils 을 사용하기 위해서는 commons-lang3이 필요하다.   
 ### build.gradle 에 아래 항목을 추가한다.
 
