@@ -2,7 +2,7 @@
 layout: post
 title: Java 현재 시간 + 랜덤 문자로 고유한 Unique 값 만들기
 excerpt: "SimpleDateFormat + Calendar + RandomStringUtils"
-categories: [Java]]
+categories: [Java]
 comments: true
 ---
 
