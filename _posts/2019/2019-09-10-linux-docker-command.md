@@ -64,6 +64,11 @@ ex) docker cp /home/paas/nginx.tar.gz paas:/home
 
 #### 이미지 추출 / Load
 ```bash
+#현재 실행중인 컨테이너를 이미지로 만들기
+docker commit -p <container ID> <이름>
+```
+
+```bash
 #이미지 추출하기
 docker save -o <파일명.tar> <이미지ID>
 ```
