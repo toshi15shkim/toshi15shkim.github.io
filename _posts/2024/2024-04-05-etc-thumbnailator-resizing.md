@@ -18,6 +18,12 @@ dependencies {
 <br/>
 <br/>
 
+src/main/resources/static/input.png 파일이 있다고 가정한다.
+<br/>
+아래 소스를 수행하면 thumbnails 폴더를 만들고 동일한 이름의 리사이징된 이미지가 생성된다.
+
+
+
 ```java
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.name.Rename;
