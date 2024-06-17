@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Rocky Linux 9 - Fail2ban 설치하기
-excerpt: ""
-categories: [Linux]
+excerpt: "Fail2ban"
+categories: [Security]
 comments: true
 ---
 
@@ -32,18 +32,23 @@ epel-release 패키지 설치가 완료되었다.
 
   ![Smithsonian Image](/img/2024/240617/2.rocky9_fail2ban.jpg){: width="700"}
 <br/>
+<br/>
+<br/>
 이제 아래 명령어로 fail2ban 설치가 가능하다.
 ```bash
 $ dnf install fail2ban -y
 ```
 
 <br/>
+<br/>
 
+fail2ban 상태 확인
 ```bash
-# fail2ban 상태 확인
 $ systemctl status fail2ban.service
 ```
   ![Smithsonian Image](/img/2024/240617/3.rocky9_fail2ban.jpg){: width="700"}
+<br/>
+<br/>
 <br/>
 
 ```bash
@@ -75,7 +80,7 @@ maxretry = 5
 # See "tests/files/logs/sshd" or "filter.d/sshd.conf" for usage example and details.
 #mode   = normal
 
-enabled = true    #해당부분 추가 (enabled = true)
+    enabled = true    #######해당부분 추가 (enabled = true)#######
 port    = ssh
 logpath = %(sshd_log)s
 backend = %(sshd_backend)s
@@ -85,5 +90,5 @@ backend = %(sshd_backend)s
 
 fail2ban 시작 명령어
 ```bash
-sudo systemctl start fail2ban
+systemctl start fail2ban
 ```
