@@ -2,7 +2,7 @@
 layout: post
 title: Rocky Linux 9 - 한국 시간으로 재설정하기
 excerpt: ""
-categories: [ETC]
+categories: [Linux]
 comments: true
 ---
 
